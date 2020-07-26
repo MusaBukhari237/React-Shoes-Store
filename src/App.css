@@ -1,0 +1,140 @@
+body{
+  background-color: #282c34;
+  margin: 0;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color:white;
+  font-family: -apple-system, BProductMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+
+.navborder{
+  /* margin-left: 4%; */
+  width: 96%;
+  margin-top: 20px;
+  margin-left:auto;
+
+}
+
+.navbar{
+  background-color: #52575d;
+  height: 40px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccdaf4;
+  border-radius: 10px;
+  width: 96%;
+  
+}
+
+.nav-menu{
+  margin-right: 25px;
+  font-size: 20px;
+
+}
+
+.nav-menu:hover{
+  color:rgb(180, 177, 177);
+
+}
+
+.menu-active{
+    
+    color:rgb(180, 177, 177);
+
+}
+
+.titlebar{
+  margin-top:20px;
+}
+
+
+
+.Product-Container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.Product {
+  background-color: rgb(146, 150, 153);
+  border-radius: 10px;
+  box-shadow: 0 0 10px  #85def6;
+  overflow: hidden;
+  border: #bae8f5 3px solid;
+  height: 340px;
+  
+}
+
+.Product:hover {
+  background-color: rgb(119, 122, 124);
+  box-shadow: 0 0 10px #0f72c4;
+
+}
+
+.product-title {
+  color: #282c34;
+  font-size: 20px;
+}
+
+.box-title{
+  padding-top: 10px;
+  background-color: #52575d;
+  height: 38px;
+  overflow: hidden;
+}
+
+.product-img{
+  width:180px;
+}
+
+.box-img {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  height: 110px;
+}
+
+h4.product-price {
+  font-size: 20px;
+
+}
+
+b.product-b-price {
+  font-size: 25px;
+}
+
+@media (max-width:1000px){
+.Product-Container {
+  grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media (max-width:900px){
+.Product-Container {
+  grid-template-columns: repeat(3, 1fr);
+}
+  
+
+}
+@media (max-width:600px){
+.Product-Container {
+  grid-template-columns: repeat(2, 1fr);
+}  
+}
+
+@media (max-width:400px){
+.Product-Container {
+  grid-template-columns: repeat(1, 1fr);
+}
+}
+
