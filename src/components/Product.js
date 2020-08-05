@@ -11,10 +11,10 @@ function Product() {
 
       {/* Products Loop */}
       <div className="Product-Container">
-        {Object.keys(Products).map((keyName) => {
+        {Object.keys(Products).map((keyName , ind) => {
           let Product = Products[keyName];
           return (
-            <Link key={keyName} className="Product">
+            <Link key={keyName} id={ind} to={`/Product/${keyName}`} className="Product">
               <div class="box-title">
               <h2 class="product-title">{Product.name}</h2>
               </div>
