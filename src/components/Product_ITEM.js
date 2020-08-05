@@ -2,6 +2,7 @@
 import React from "react";
 import Products from "./../Products.json";
 import { Link , useParams} from "react-router-dom";
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
 function Product() {
   let {Productid} = useParams();
@@ -12,7 +13,7 @@ function Product() {
   return (
   <div>
       <Link to="/Product">
-    <h1 class="Back_to_Product">⏪</h1>
+    <h1 class="Back_to_Product"><KeyboardBackspaceIcon/></h1>
     </Link>
     <h1 class="titlebar">Product Not Found</h1>
   </div>
@@ -23,15 +24,13 @@ function Product() {
     
 
   };
-
   return (
     <div>
     <Link to="/Product">
-    <h1 class="Back_to_Product">⏪</h1>
+    <h1 class="Back_to_Product"><KeyboardBackspaceIcon/></h1>
     </Link>
       
       <h1 class="titlebar">Product Details</h1>
-
       <div className="Product_box">
       <div>
               <div key={Productid} className="Product Product_ITEM" onMouseOver={FlipDetails()}>
@@ -46,7 +45,7 @@ function Product() {
               </div>
 
               <div class="box-desc">
-              <h6>Description</h6>
+              <h5>Description</h5>
               <h2 class="product-desc">{Product.desc}</h2>
               </div>
               
