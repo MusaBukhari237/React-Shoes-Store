@@ -14,7 +14,8 @@ function Product() {
         {Object.keys(Products).map((keyName , ind) => {
           let Product = Products[keyName];
           return (
-            <Link key={keyName} id={ind} to={`/Product/${keyName}`} className="Product">
+            <div  className="Product">
+            <Link key={keyName} id={ind} to={`/Product/${keyName}`}>
               <div class="box-title">
               <h2 class="product-title">{Product.name}</h2>
               </div>
@@ -25,6 +26,7 @@ function Product() {
               <h4 class="product-price"><b class="product-b-price" >Price : </b>{Product.price}</h4>
               </div>
             </Link>
+            </div>
           );
         })
         }
